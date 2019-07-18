@@ -1,0 +1,21 @@
+{
+  "name": "AllegroAdditions",
+  "version": "1.0",
+  "description": "Allegro additions",
+  "manifest_version": 2,
+  "permissions": ["storage", "*://*.allegro.pl/*"],
+  "browser_action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+
+    }
+  },
+  "icons": {
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.allegro.pl/*"],
+      "js": ["src/AllegroAdditions.js"]
+    }
+  ]
+}
